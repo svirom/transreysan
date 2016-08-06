@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Transreysan. Contacts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="./css/fonts.css">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<script type="text/javascript" src="./js/jquery-1.11.2.min.js"></script>
+
+</head>
+<body>
+	<header class="header_main">
+    	<div><img src="img/logo.png" alt="Logo"></div>
+        <nav class="nav_main">
+        	<button><img src="img/button_768.png"></button>
+        	<ul>
+            	<li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><span>Services</span>
+                	<ul>
+                    	<div class="triangle"></div>
+                    	<li><a href="./document_management_services.html">Document Management Services</a></li>
+                        <li><a href="./professional_movers.html">Professional Movers</a></li>
+                        <li><a href="./storage_services.html">Storage Services</a></li>
+                    </ul>
+                </li>      
+                <li><a href="./contacts.html">Contacts</a></li>           
+            </ul>
+            
+        </nav>
+    </header>
+    <section>
+    	<img src="img/contacts_main.png">
+    </section>
+    <section class="keep_in_touch">
+		<h1>Keep in Touch</h1>
+		<div class="inner_contacts">
+			<div class="contacts">
+				<ul>
+					<li class="c_address"><strong>REYSAN HUB</strong><br><span>(1134731-H)</span></li>
+					<p>Lot 1A, Jalan BRP 9/1C<br>Bukit Rahman Putra Industrial Park<br>47000 Sungai Buluh, Selangor<br>Malaysia.</p>
+					<li class="c_tel">+6 (03) 6156 5903  |  5904  |  5905</li>
+					<li class="c_fax">+6 (03) 6156 5908</li>
+					<li class="c_email"><a href="mailto:info@transreysan.com">info@transreysan.com</a></li>
+					<li class="c_site"><a href="http://www.transreysan.com">www.transreysan.com</a></li>
+				</ul>
+			</div>	
+			<div class="form_wrapper">
+				<form action="form_action.php" enctype="multipart/form-data" method="post" id="main_form">
+					<label><strong>Send us a message online.</strong></label>
+					<input type="text" name="name" class="name" placeholder="Name *" required />
+					<input type="text" name="company" class="company" placeholder="Company *" required />
+					<input type="tel" name="phone" class="phone" placeholder="Phone *" required />
+					<input type="email" name="email" class="email" placeholder="Email Address *" required />
+					<textarea name="message" class="message" placeholder="How can we help you? *" required></textarea>
+					<input type="submit" name="send_message" class="send_message" value="SEND" />
+				</form>
+			</div>
+		</div>
+    </section>
+
+    <div id="map_canvas"></div>
+<script type="text/javascript" src="./js/script.js"></script>
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDFtMfRGX45XT3etX9K3QZvLbUBmacmTs4&callback=initMap" async defer= type="text/javascript"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>-->
+<script>function initMap() {     //GoogleMap API function
+
+    var map = new google.maps.Map(document.getElementById("map_canvas"), {
+		disableDefaultUI: true,
+        zoom: 16,
+        center: {lat: 3.219416, lng: 101.5692541},
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    }); 
+
+	var marker = new google.maps.Marker({
+    position: {lat: 3.219416, lng: 101.5692541},
+    map: map,
+    title:"Putra Industrial Park" 
+	});
+	
+	map.addListener('center_changed', function() {
+    // 3 seconds after the center of the map has changed, pan back to the
+    // marker.
+    window.setTimeout(function() {
+      map.panTo(marker.getPosition());
+    }, 100);
+  });
+  
+	marker.addListener('click', function() {
+    map.setZoom(18);
+    map.setCenter(marker.getPosition());
+  });
+	
+}
+</script>
+	
+    <footer class="footer_main">
+    	<div><img src="img/logo_footer.png"></div>
+        <p>Need more info? Please fee free to contact us: sales@transreysan.com</p>
+        <p>&copy; 2015 Transreysan. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

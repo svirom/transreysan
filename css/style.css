@@ -1,0 +1,233 @@
+html, body {background: transparent; border: 0; font-size: 100%; padding: 0; margin: 0; line-height: 1; height: 100%;}
+body {width: 100%; background-color: #FFF; min-width: 320px; max-width: 1920px;}
+h1, h2, h3, h4, h5, h6 { font-weight:normal;}
+ol, ul {list-style: none;}
+img {width: 100%;}
+header.header_main {margin: 0 auto; width: 100%; height: 132px; background: url(../img/header_main_b.png) 0 110px repeat-x; position: relative;}
+header.header_main>div {width: 300px; left: 4.6875%; top: 22px; position: absolute;}
+
+nav.nav_main {float: right; font: 16px "Gotham Light"; margin-right: 6.796875%; margin-top: 32px;}
+.nav_main>ul>li {display: inline-block; float: left; margin: 0 25px; padding: 5px 10px;}
+.nav_main>ul>li>a {text-decoration: none; color: #3F4447; display: block; border: 10px solid white; transition: color ease .5s;}
+.nav_main>ul>li span {cursor: pointer; color: #3F4447; display: block; border: 10px solid white; transition: color ease .5s;}
+.nav_main>ul>li>a:hover, .nav_main>ul>li span:hover{color: #F36F21;}
+.nav_main ul li>ul {display: none; position: absolute; padding-top: 20px; margin-left: -190px; z-index:100;}
+.nav_main ul li>ul>li {margin-bottom: 1px;}
+.nav_main ul li>ul>li>a {display:block; background-color: #F36F21; height: 44px; padding: 0 18px; line-height: 44px; text-decoration: none; color: #FFF; transition: background-color ease .5s;}
+.nav_main ul li>ul>li>a:hover {background-color: #FA9623;}
+.triangle {height: 0; width: 0; border: 15px solid transparent;	border-bottom: 15px solid #F36F21; left: 75%; top: -10px; position: absolute; transition: border-bottom-color ease .5s;}
+.nav_main button {display: none; width: 36px; border: 0; background: none;}
+
+footer.footer_main {margin: 0 auto; width: 100%; height: 246px; background-color: #004781; margin-top: -19px; position: relative;}
+.footer_main>div {width: 256px; position: absolute; top: 38px; left: 50%; margin-left: -128px;}
+.footer_main p {padding-top: 15px; text-align: center; font: 13px "Gotham Light"; color: #FFFFFF;}
+.footer_main p:first-of-type {font: 16px "Gotham Light"; padding-top: 126px;}
+.footer_main p:last-of-type {opacity: 0.35;}
+
+/*-------------------------About page-----------------------------------*/
+.about {width: 100%; color: #FFF;}
+.inner { width: 100%; text-align: center; background: #014782 url(../img/about_b1.png) center center no-repeat; background-size: contain;}
+.inner h1 {font: 38px/0.5 "Gotham Medium"; padding: 10% 5% 1%; margin-top: 0;}
+.inner p {font: 22px "Gotham Light"; margin-top: 0;}
+.inner ul {padding: 1% 0 10%; position: relative; display: inline-block; text-align: center;}
+.inner ul li {display: block; width: 194px; height: 194px; background: rgba(255, 255, 255, 0); border: 2px solid #F67E28; border-radius: 50%; float: left; margin-left: 80px;}
+.inner ul li:first-child {margin-left: 0;}
+.inner ul li a {display: block; /*width: 190px;*/ height: 190px; background-color: #F67E28; border-radius: 50%; margin: 2px; font: 24px "Gotham Light";} 
+.inner ul li a span {display: block; position: relative;}
+.inner ul li a span span {display: block; top: 66px; position: absolute; color: #FFF;}
+.inner ul li:first-child a span span {top: 52px;}
+
+.about_text {background: url(../img/about_b2.png) center center no-repeat; background-size: cover; margin-top: -18px; position: relative;}
+.about_text article {width: 46.875%; height: auto; background: rgba(255, 255, 255, 0.8);}
+.about_text article p {font: 18px/1.5 "Gotham Light"; padding: 10px 60px 0px 60px;}
+.about_text article p:first-child {padding-top: 56px; }
+.about_text article p:last-child {padding-bottom: 60px;}
+.about_text article p span {color: #F67E28; font-weight: bold;}
+.about_img {margin-top: -18px; position: relative;}
+
+/*-----------------------End About page---------------------------------*/
+
+
+/*-------------------------DMS page-----------------------------------*/
+.dms_main h1 {text-align: center; font: 32px "Gotham Book"; color: #F36F21; padding-top: 40px; padding-bottom: 10px;}
+.dms_main p {font: 18px/1.3 "Gotham Light"; padding-left: 4.6875%; padding-right: 7.8125%; margin: 30px 0;}
+.dms_main p:nth-child(6) {margin-bottom: 10px;}
+.dms_main p span {font: 22px/1.3 "Gotham ExtraLight"; color: #004781;}
+ol {list-style-type: none; counter-reset: list;}
+ol li:before {counter-increment: list; content: counter(list , lower-roman) ')';}
+.dms_main ol {font: 18px/1.7 "Gotham Light"; padding-left: 0; padding-left: 4.6875%; margin-top: 10px;}
+ol li span {padding-left: 22px;}
+ol li:nth-child(2) span {padding-left: 17px;}
+ol li:nth-child(3) span {padding-left: 14px;}
+ol li:nth-child(4) span {padding-left: 13px;}
+ol li:nth-child(5) span {padding-left: 16px;}
+ol li:nth-child(6) span {padding-left: 13px;}
+ol li:nth-child(7) span {padding-left: 8px;}
+ol li:nth-child(8) span {padding-left: 5px;}
+
+.dms_content1, .dms_content3 {color: #FFFFFF; position: relative;}
+.dms_content2, .dms_content4 {color: #3F4447; position: relative;}
+.dms_content1 article, .dms_content3 article {width: 50%; height: 100%; background-color: #F36F21;}
+.dms_content2 article, .dms_content4 article {width: 50%; height: 100%; background-color: #E8EAEB; margin-left: 50%;}
+.dms_content1 h1, .dms_content2 h1, .dms_content3 h1, .dms_content4 h1 {font: 26px "Gotham Book"; margin-top: 0; padding: 9.8% 0 0 9.375%;}
+.dms_content1 ol {font: 18px/2.0 "Gotham Light"; padding-left: 0; padding: 0 5% 30% 9.375%;}
+.dms_content2 ol {font: 18px/2.0 "Gotham Light"; padding-left: 0; padding: 0 5% 28% 9.375%;}
+.dms_content3 ol {font: 18px/2.0 "Gotham Light"; padding-left: 0; padding: 0 5% 20% 9.375%;}
+.dms_content4 ol {font: 18px/2.0 "Gotham Light"; padding-left: 0; padding: 0 5% 8% 9.375%;}
+
+.dms_content1 div {width: 50%; height: 100%; background: url(../img/dms_1.png) center center no-repeat; background-size: cover; position: absolute; left: 50%; top: 0;}
+.dms_content2 div {width: 50%; height: 100%; background: url(../img/dms_2.png) center center no-repeat; background-size: cover; position: absolute; top: 0;}
+.dms_content3 div {width: 50%; height: 100%; background: url(../img/dms_3.png) center center no-repeat; background-size: cover; position: absolute; left: 50%; top: 0;}
+.dms_content4 div {width: 50%; height: 100%; background: url(../img/dms_4.png) center center no-repeat; background-size: cover; position: absolute; top: 0;}
+
+/*-------------------------End DMS page-----------------------------------*/
+
+
+/*-------------------------Professional Movers page-----------------------------------*/
+.pm_content {width: 100%; background: #3F4447 url(../img/pm_content.png) center center no-repeat; background-size: cover; color: #FFFFFF;}
+.pm_content h1 {text-align: center; font: 32px "Gotham Book"; color: #FFFFFF; padding-top: 80px; padding-bottom: 30px;}
+.pm_content>ol {font: bold 18px/1.7 "Gotham Light"; padding-left: 0; padding-left: 4.6875%; margin: 10px 0 0; list-style-type: none; counter-reset: list1; padding-bottom: 80px;}
+.pm_content>ol.pm_main_list>li:before {counter-increment: list1; content:counter(list1, decimal) ')';}
+.pm_content>ol.pm_main_list>li:nth-child(5)>span, .pm_content>ol.pm_main_list>li:nth-child(6)>span, .pm_content>ol.pm_main_list>li:nth-child(7)>span, 
+.pm_content>ol.pm_main_list>li:nth-child(8)>span, .pm_content>ol.pm_main_list>li:nth-child(9)>span {padding-left: 14px;}
+.pm_content>ol.pm_main_list>li:nth-child(1)>span {padding-left: 18px;}
+.pm_content>ol.pm_main_list>li>ol {padding-left: 36px; margin: 20px 0 40px; font-weight: normal;}
+.pm_content>ol.pm_main_list>li>ol:first-of-type li:first-child span {padding-left: 22px;}
+
+/*-------------------------End Professional Movers page-----------------------------------*/
+
+
+/*-------------------------Storage Services page-----------------------------------*/
+.dms_main p strong {display: block; margin-bottom: 0;}
+.dms_main p.no_margin_top {margin-top: 0;}
+.dms_main p.no_margin_bottom {margin-bottom: 0;}
+.dms_main p>a {text-decoration: none; color: #004781; font: 18px "Gotham Book";}
+.dms_main p>a:hover {text-decoration: underline;}
+.ss_content1, .ss_content2 {color: #FFFFFF; position: relative;}
+.ss_content1 article {width: 50%; height: 100%; background-color: #F36F21;}
+.ss_content2 article {width: 50%; height: 100%; background-color: #F36F21; margin-left: 50%;}
+.ss_content1 h1, .ss_content2 h1 {font:18px "Gotham Light"; margin-top: 0; padding: 7.8% 0 0 9.375%;}
+.ss_content1 ol {font: 18px/2.0 "Gotham Light"; padding-left: 0; padding: 0 5% 10% 9.375%;}
+.ss_content2 ol {font: 18px/2.0 "Gotham Light"; padding-left: 0; padding: 0 5% 8% 9.375%;}
+
+.ss_content1 div {width: 50%; height: 100%; background: url(../img/ss_1.png) center center no-repeat; background-size: cover; position: absolute; left: 50%; top: 0;}
+.ss_content2 div {width: 50%; height: 100%; background: url(../img/ss_2.png) center center no-repeat; background-size: cover; position: absolute; top: 0;}
+
+/*-------------------------End Storage Services page-----------------------------------*/
+
+
+/*-------------------------Contacts page-----------------------------------*/
+.keep_in_touch h1 {text-align: center; font: 32px "Gotham Book"; color: #F36F21; padding-top: 40px; padding-bottom: 10px;}
+.keep_in_touch div.inner_contacts {width: 90%; position: relative; margin: 0 auto; padding: 0 5% 5%;}
+.keep_in_touch div.inner_contacts:after {display: block; content: ' '; clear: both;}
+
+.keep_in_touch div.inner_contacts div.contacts {width: 46.1875%; float: left; margin-left: 3.8125%;}
+.keep_in_touch div.inner_contacts div.contacts ul {width: 100%; padding: 0;}
+.keep_in_touch div.inner_contacts div.contacts ul p {font: 18px/1.3 "Gotham Light"; padding-left: 40px; margin: 0 0 20px 0;}
+.keep_in_touch div.inner_contacts div.contacts ul li {font: 18px "Gotham Light"; padding: 2px 0 2px 40px; margin-bottom: 20px;}
+.keep_in_touch div.inner_contacts div.contacts ul li span {font: 13px/1.0 "Gotham Light";}
+.keep_in_touch div.inner_contacts div.contacts ul li a {text-decoration: none; color: #004781; font: 18px "Gotham Book";}
+.keep_in_touch div.inner_contacts div.contacts ul li a:hover {text-decoration: underline;}
+.keep_in_touch div.inner_contacts div.contacts ul li.c_address {background: url(../img/icon_address.png) left 3px no-repeat; margin-bottom: 10px; font: 20px/0.9 "Gotham Light";}
+.keep_in_touch div.inner_contacts div.contacts ul li.c_tel {background: url(../img/icon_tel.png) left center no-repeat;}
+.keep_in_touch div.inner_contacts div.contacts ul li.c_fax {background: url(../img/icon_fax.png) left center no-repeat;}
+.keep_in_touch div.inner_contacts div.contacts ul li.c_email {background: url(../img/icon_email.png) left center no-repeat;}
+.keep_in_touch div.inner_contacts div.contacts ul li.c_site {background: url(../img/icon_link.png) left center no-repeat;}
+
+.keep_in_touch div.inner_contacts div.form_wrapper {width: 33.75%; float: right; margin: 0 9.5625% 0 6.6875%;}
+.keep_in_touch div.inner_contacts div.form_wrapper form {width: 100%; height: 100%; margin-top: 16px;}
+.keep_in_touch div.inner_contacts div.form_wrapper form label {font: 18px "Gotham Light"; color: #3F4447;}
+.keep_in_touch div.inner_contacts div.form_wrapper form input {width: 100%; height: 38px; border: 1px solid #EDEFF0; background-color: #F5F6F7; padding: 0; text-indent: 10px; font: 16px 'ProximaNova-Light'; margin-top: 10px; outline: none;}
+.keep_in_touch div.inner_contacts div.form_wrapper form label+input {margin-top: 28px;}
+.keep_in_touch div.inner_contacts div.form_wrapper form input[type="submit"] {width: 110px; cursor: pointer; margin-top: 20px; text-indent: 0; color: #FFFFFF; background-color: #F36F21; transition: background-color ease .5s;}
+.keep_in_touch div.inner_contacts div.form_wrapper form input[type="submit"]:hover {background-color: #FA9623;}
+.keep_in_touch div.inner_contacts div.form_wrapper form textarea {width: 100%; height: 134px; background-color: #F5F6F7; border: 1px solid #EDEFF0; padding: 0; resize: none; text-indent: 10px; font: 16px 'ProximaNova-Light'; margin-top: 10px; padding-top: 10px; outline: none;}
+.keep_in_touch div.inner_contacts div.form_wrapper form input::-webkit-input-placeholder, .keep_in_touch div.form_wrapper form textarea::-webkit-input-placeholder {font: 16px 'ProximaNova-Light'; color: #3F4447; opacity: 0.4}
+.keep_in_touch div.inner_contacts div.form_wrapper form input::-moz-placeholder, .keep_in_touch div.form_wrapper form textarea::-moz-placeholder {font: 16px 'ProximaNova-Light'; color: #3F4447; opacity: 0.4}
+.keep_in_touch div.inner_contacts div.form_wrapper form input:-moz-placeholder, .keep_in_touch div.form_wrapper form textarea:-moz-placeholder {font: 16px 'ProximaNova-Light'; color: #3F4447; opacity: 0.4}
+.keep_in_touch div.inner_contacts div.form_wrapper form input:-ms-input-placeholder, .keep_in_touch div.form_wrapper form textarea:-ms-input-placeholder {font: 16px 'ProximaNova-Light'; color: #3F4447; opacity: 0.4}
+.keep_in_touch div.inner_contacts div.form_wrapper form input:focus, .keep_in_touch div.inner_contacts div.form_wrapper form textarea:focus {background-color: #FFFFFF; box-shadow: 0 0 3px #ccc;}
+#map_canvas {padding: 15.625% 50%;}
+
+
+
+
+
+/*-------------------------End Contacts page-----------------------------------*/
+
+
+@media screen and (min-width:768px) {
+.nav_main>ul {display: block!important;}
+	
+	}
+	
+	
+@media screen and (max-width:1280px) {
+
+	}
+
+
+
+@media screen and (max-width:1024px) {
+nav.nav_main {margin-right: 2%;}
+.nav_main>ul>li {margin: 0 5px; padding: 5px 5px;}
+.inner h1 {font-size: 32px;}
+.inner p {font-size: 18px;}
+.inner ul li {width: 164px; height: 164px;}
+.inner ul li a {/*width: 160px;*/ height: 160px; font-size: 20px;}
+.inner ul li a span span {top: 57px;}
+.inner ul li:first-child a span span {top: 45px;}
+.about_text article {width: 70%;}
+	
+	}
+	
+@media screen and (max-width:767px){
+header.header_main {height: 66px; background: url(../img/header_main_b_768.png) 0 56px repeat-x;}
+header.header_main>div {width: 150px; top: 10px;}
+header.header_main>div img, .nav_main button img {width: 100%}
+nav.nav_main {margin-top: 10px; margin-right: 0;}
+.nav_main button {display: block; width: 50px; position: absolute; right: 10px}
+.nav_main>ul>li {display: list-item; float: none; padding: 0 2px; margin-bottom: 1px;}
+.nav_main>ul {margin-top: 40px; position: absolute; right: 10px; display: none;}
+.nav_main>ul>li>a, .nav_main>ul>li span {border:0;  color: #FFF; background-color: #004781; height: 44px; line-height: 44px; display: block; padding-left: 20px; padding-right: 70px;}
+.nav_main ul li>ul {margin-left: -130px;}
+
+footer.footer_main {height: 246px; padding-bottom: 30px;}
+.footer_main>div {width: 128px; top: 19px; margin-left: -64px;}
+.footer_main p {padding-top: 8px; font-size: 10px;}
+.footer_main p:first-of-type {padding-top: 63px; font-size: 13px;}	
+
+.about_text article {width: 100%;}
+.about_text article p {font: 16px/1.5 "Gotham Light"; padding-left: 20px; padding-top: 8px; padding-right: 20px;}
+.about_text article p:first-child {padding-top: 16px; }
+.about_text article p:last-child {padding-bottom: 20px;}
+
+.inner ul {width: 80%; padding: 1% 0 1%;}
+.inner ul li {width: 99%; height: 72px; border-radius: 7px; margin: 10px 0;}
+
+.inner ul li a {height: 68px; font-size: 20px; border-radius: 4px; line-height: 68px; font-size: 18px;}
+
+.inner ul li a span, .inner ul li a span span, .inner ul li:first-child a span span {top: 0;}
+.inner ul li a span span {display: inline-block; text-align: center; position: relative;}
+
+.dms_content1 div, .dms_content2 div, .dms_content3 div, .dms_content4 div, .ss_content1 div, .ss_content2 div {width: 100%; height: 40%; left: 0;}
+.dms_content1 article, .dms_content2 article, .dms_content3 article, .dms_content4 article, .ss_content1 article, .ss_content2 article {width: 100%; height: 60%; padding-top: 40%;}
+.dms_content1 ol {font: 18px/2.0 "Gotham Light"; padding-left: 0; padding: 0 5% 10% 9.375%;}
+.dms_content2 ol {font: 18px/2.0 "Gotham Light"; padding-left: 0; padding: 0 5% 9% 9.375%;}
+.dms_content3 ol {font: 18px/2.0 "Gotham Light"; padding-left: 0; padding: 0 5% 7% 9.375%;}
+.dms_content4 ol, .ss_content1 ol, .ss_content2 ol {font: 18px/2.0 "Gotham Light"; padding-left: 0; padding: 0 5% 2% 9.375%;}
+.dms_content2 article, .dms_content4 article , .ss_content2 article{margin-left: 0;}
+.ss_content1 h1, .ss_content2 h1 {padding: 2.8% 0 0 9.375%;}
+.ss_content1 article, .ss_content2 article {padding-top: 25%;}
+
+.keep_in_touch div.inner_contacts div.contacts {width: 92.1875%; float: none; margin-left: 7.8125%; margin-bottom: 50px;}
+.keep_in_touch div.inner_contacts div.form_wrapper {width: 83.75%; float: none; margin: 0 11.5625% 0 4.6875%;}
+
+
+
+	}
+	
+@media screen and (max-width:392px) {	
+.inner ul li:first-child a {line-height: 1.2; padding-top: 12px; height: 56px;}
+}
+

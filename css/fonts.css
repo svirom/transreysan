@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Gotham Light';
+  src: url(../css/webfont/Gotham-Light.eot?#iefix) format('embedded-opentype'),  url(../css/webfont/Gotham-Light.woff) format('woff'), url(../css/webfont/Gotham-Light.ttf)  format('truetype'), url(../css/webfont/Gotham-Light.svg#Gotham-Light) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Gotham Medium';
+  src: url(../css/webfont/GothamMedium.eot?#iefix) format('embedded-opentype'),  url(../css/webfont/GothamMedium.woff) format('woff'), url(../css/webfont/GothamMedium.ttf)  format('truetype'), url(../css/webfont/GothamMedium.svg#GothamMedium) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Gotham Book';
+  src: url(../css/webfont/Gotham-Book.eot?#iefix) format('embedded-opentype'),  url(../css/webfont/Gotham-Book.woff) format('woff'), url(../css/webfont/Gotham-Book.ttf)  format('truetype'), url(../css/webfont/Gotham-Book.svg#Gotham-Book) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Gotham ExtraLight';
+  src: url(../css/webfont/Gotham-ExtraLight.eot?#iefix) format('embedded-opentype'),  url(../css/webfont/Gotham-ExtraLight.otf)  format('opentype'),
+	     url(../css/webfont/Gotham-ExtraLight.woff) format('woff'), url(../css/webfont/Gotham-ExtraLight.ttf)  format('truetype'), url(../css/webfont/Gotham-ExtraLight.svg#Gotham-ExtraLight) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src: url(../css/webfont/ProximaNova-Light.eot?#iefix) format('embedded-opentype'),  url(../css/webfont/ProximaNova-Light.otf)  format('opentype'),
+	     url(../css/webfont/ProximaNova-Light.woff) format('woff'), url(../css/webfont/ProximaNova-Light.ttf)  format('truetype'), url(../css/webfont/ProximaNova-Light.svg#ProximaNova-Light) format('svg');
+  font-weight: normal;
+  font-style: normal;
