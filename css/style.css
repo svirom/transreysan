@@ -6,7 +6,7 @@ img {width: 100%; border: none; outline: none;}
 header.header_main {margin: 0 auto; width: 100%; height: 132px; background: url(../img/header_main_b.png) 0 110px repeat-x; position: relative;}
 header.header_main>div {width: 300px; left: 4.6875%; top: 22px; position: absolute;}
 
-nav.nav_main {float: right; font: 16px "Gotham Light"; margin-right: 6.796875%; margin-top: 32px;}
+nav.nav_main {float: right; font: 16px "Gotham Book"; margin-right: 6.796875%; margin-top: 32px;}
 .nav_main>ul>li {display: inline-block; float: left; margin: 0 25px; padding: 5px 10px;}
 .nav_main>ul>li>a {text-decoration: none; color: #3F4447; display: block; border: 10px solid white; transition: color ease .5s;}
 .nav_main>ul>li span {cursor: pointer; color: #3F4447; display: block; border: 10px solid white; transition: color ease .5s;}
