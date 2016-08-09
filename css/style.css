@@ -1,8 +1,8 @@
-html, body {background: transparent; border: 0; font-size: 100%; padding: 0; margin: 0; line-height: 1; height: 100%;}
+html, body {background: transparent; border: 0; font-size: 100%; padding: 0; margin: 0; outline: 0; vertical-align: baseline; line-height: 1; height: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 body {width: 100%; background-color: #FFF; min-width: 320px; max-width: 1920px;}
 h1, h2, h3, h4, h5, h6 { font-weight:normal;}
 ol, ul {list-style: none;}
-img {width: 100%;}
+img {width: 100%; border: none; outline: none;}
 header.header_main {margin: 0 auto; width: 100%; height: 132px; background: url(../img/header_main_b.png) 0 110px repeat-x; position: relative;}
 header.header_main>div {width: 300px; left: 4.6875%; top: 22px; position: absolute;}
 
@@ -18,11 +18,12 @@ nav.nav_main {float: right; font: 16px "Gotham Light"; margin-right: 6.796875%; 
 .triangle {height: 0; width: 0; border: 15px solid transparent;	border-bottom: 15px solid #F36F21; left: 75%; top: -10px; position: absolute; transition: border-bottom-color ease .5s;}
 .nav_main button {display: none; width: 36px; border: 0; background: none;}
 
-footer.footer_main {margin: 0 auto; width: 100%; height: 246px; background-color: #004781; margin-top: -20px; position: relative;}
-.footer_main>div {width: 256px; position: absolute; top: 38px; left: 50%; margin-left: -128px;}
+footer.footer_main {margin: 0 auto; width: 100%; background-color: #004781; margin-top: -4px; position: relative;}
+.footer_main>div { width: 256px; margin: 0 auto; padding-top: 38px;}
 .footer_main p {padding-top: 15px; text-align: center; font: 13px "Gotham Light"; color: #FFFFFF;}
-.footer_main p:first-of-type {font: 16px "Gotham Light"; padding-top: 126px;}
-.footer_main p:last-of-type {opacity: 0.35;}
+.footer_main p:first-of-type {font: 16px "Gotham Light"; padding-top: 23px;}
+.footer_main p:last-of-type {opacity: 0.35; padding-bottom: 100px;}
+
 
 /*-------------------------About page-----------------------------------*/
 .about {width: 100%; color: #FFF;}
@@ -193,15 +194,14 @@ nav.nav_main {margin-top: 10px; margin-right: 0;}
 .nav_main>ul>li>a, .nav_main>ul>li span {border:0;  color: #FFF; background-color: #004781; height: 44px; line-height: 44px; display: block; padding-left: 20px; padding-right: 70px;}
 .nav_main ul li>ul {margin-left: -130px;}
 
-footer.footer_main {height: 246px; padding-bottom: 30px;}
-.footer_main>div {width: 128px; top: 19px; margin-left: -64px;}
+footer.footer_main { padding-bottom: 30px;}
+.footer_main>div {width: 128px;}
 .footer_main p {padding-top: 8px; font-size: 10px;}
-.footer_main p:first-of-type {padding-top: 63px; font-size: 13px;}	
-
+.footer_main p:first-of-type {padding: 20px 30px; font-size: 13px;}	
 .about_text article {width: 100%;}
-.about_text article p {font: 16px/1.5 "Gotham Light"; padding-left: 20px; padding-top: 8px; padding-right: 20px;}
-.about_text article p:first-child {padding-top: 16px; }
-.about_text article p:last-child {padding-bottom: 20px;}
+.about_text article p {font: 16px/1.5 "Gotham Light"; padding-left: 30px; padding-top: 8px; padding-right: 30px;}
+.about_text article p:first-child {padding-top: 36px; }
+.about_text article p:last-child {padding-bottom: 36px;}
 
 .inner ul {width: 80%; padding: 1% 0 1%;}
 .inner ul li {width: 99%; height: 72px; border-radius: 7px; margin: 10px 0;}
@@ -219,6 +219,8 @@ footer.footer_main {height: 246px; padding-bottom: 30px;}
 .dms_content3 ol {font: 18px/1.7 "Gotham Light"; padding-left: 0; padding: 0 5% 7% 9.375%;}
 .dms_content4 ol {font: 18px/1.7 "Gotham Light"; padding-left: 0; padding: 0 5% 10% 9.375%;}
 .dms_content2 article, .dms_content4 article , .ss_content2 article {margin-left: 0;}
+
+ol.pm_main_list>li {padding-right: 20px;}
 
 .keep_in_touch div.inner_contacts div.contacts {width: 92.1875%; float: none; margin-left: 7.8125%; margin-bottom: 50px;}
 .keep_in_touch div.inner_contacts div.form_wrapper {width: 83.75%; float: none; margin: 0 11.5625% 0 4.6875%;}
