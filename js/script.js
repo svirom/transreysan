@@ -18,27 +18,29 @@ $('.nav_main>ul>li').mouseleave(function(){
 
 	
 $('.nav_main>ul>li').click(function(){       /*---show/hide submenu on click---*/
-	if ($(window).width() >= 768)
+	/*if ($(window).width() >= 768)*/
 	$('ul', this).stop().slideToggle(300);
 });
 	
 
 $('body').click(function(e){                   /*---hide menu by click out of menu and menu button (768)---*/
-	if  (($('body').width() < 768) && ($(e.target).closest('.nav_main>ul, .nav_main button').length == 0))
+	if  (($('body').width() < 768) && ($(e.target).closest('.nav_main>ul, a.nav-opener').length == 0))
 		 $('.nav_main>ul').css("display", "none");
 });
 
 
-$('.nav_main button').click(function(){    /*---show/hide menu by click on menu button (768)---*/
-	$('.nav_main>ul>li>ul').css("display", "none");
-	$('.nav_main>ul').toggle();	
+$('a.nav-opener').click(function(){    /*---show/hide menu by click on menu button (768)---*/
+	if ($('body').width() < 768)
+	$(this).toggleClass('nav-active');
+	/*$('.nav_main>ul>li>ul').css("display", "none");*/
+	$('.nav_main>ul').slideToggle(300);	
 });
 	
 
-$('.nav_main ul li').click(function(){     /*---show/hide submenu by click on menu button (768)---*/
-	if ($(window).width() < 768)    
+/*$('.nav_main ul li').click(function(){     /*---show/hide submenu by click on menu (768)---*/
+/*	if ($(window).width() < 768)    
 	$(this).find('ul').toggle();	
-});
+});*/
 
 
 $(window).resize(function() {              /*---show menu after resize from 768 to higher resolution (>768)---*/
