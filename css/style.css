@@ -37,7 +37,7 @@ footer.footer_main p:last-of-type {padding-bottom: 100px; opacity: 0.35;}
 .inner {width: 100%; text-align: center; background: #014782 url(../img/about_b1.png) center center no-repeat; background-size: contain;}
 .inner h1 {margin-top: 0; padding: 10% 5% 1%; font: 38px/0.5 "Gotham Medium";}
 .inner p {margin-top: 0; font: 22px "Gotham Light";}
-.inner ul {display: inline-block; position: relative; padding: 1% 0 10%; text-align: center;}
+.inner ul {display: inline-block; /*position: relative;*/ padding: 1% 0 10%; text-align: center;}
 .inner ul li {display: block; float: left; width: 194px; height: 194px; margin-left: 80px; border: 2px solid #F67E28; border-radius: 50%; background: rgba(255, 255, 255, 0);}
 .inner ul li:first-child {margin-left: 0;}
 .inner ul li a {display: block; height: 190px; margin: 2px; border-radius: 50%; font: 24px "Gotham Light"; background-color: #F67E28;} 
@@ -59,7 +59,7 @@ footer.footer_main p:last-of-type {padding-bottom: 100px; opacity: 0.35;}
 /*-------------------------DMS page-----------------------------------*/
 .dms_main {padding-bottom: 20px;}
 .dms_main h1 {padding: 40px 20px 10px 20px; color: #F36F21; text-align: center; font: 32px "Gotham Book";}
-.dms_main p {/*margin: 30px 0;*/ padding: 0 7.8125% 0 4.6875%; font: 18px/1.3 "Gotham Light";}
+.dms_main p {padding: 0 7.8125% 0 4.6875%; font: 18px/1.3 "Gotham Light";}
 .dms_main p span {margin-bottom: 10px;}
 .dms_main header, .dms_main header>p {margin: 30px 0; padding: 0 7.8125% 0 4.6875%; color: #004781; font: 22px/1.3 "Gotham ExtraLight";}
 .dms_main header>p {padding: 0;}
@@ -188,13 +188,13 @@ header.header_main>div {width: 150px; top: 10px;}
 header.header_main>div img, .nav_main button img {width: 100%}
 .nav-opener {display:block;}
 nav.nav_main {margin: 56px 0 0 0; box-sizing: border-box;}
-nav.nav_main>ul {display: none; position: absolute; width:100%; right: 0px; margin-top: 10px; overflow: hidden;}
+nav.nav_main>ul {display: none; position: absolute; width:100%; right: 0px; margin-top: 10px;}
 nav.nav_main>ul>li {display: list-item; float: none; width: 100%; margin: 0 5px 1px 0; padding: 0;}
-nav.nav_main>ul>li>a, nav.nav_main>ul>li span {display: block; height: 44px; padding: 0 70px 0 20px; border:0; color: #FFF; line-height: 44px; background-color: #004781;}
-nav.nav_main>ul>li>ul {position: relative; width:100%; margin-left: 0;  padding: 0;}
+nav.nav_main>ul>li>a, nav.nav_main>ul>li span {display: block; position: relative; height: 44px; padding: 0 70px 0 20px; border:0; color: #FFF; line-height: 44px; background-color: #F36F21; z-index: 100; transition: background-color ease .5s;}
+nav.nav_main>ul>li>a:hover, nav.nav_main>ul>li span:hover {color: #FFF; background-color: #FA9623;}
+nav.nav_main>ul>li>ul {position: relative; width:100%; margin-left: 0; padding: 0;}
 nav.nav_main>ul>li>ul>li {margin: 1px 0 0;}
-nav.nav_main>ul>li>ul>li>a {padding: 0 48px; color: #FFF; background-color: #004781; transition: color ease .5s;}
-nav.nav_main>ul>li>ul>li>a:hover {color: #F36F21; background-color: #004781;}
+nav.nav_main>ul>li>ul>li>a {padding: 0 48px;}
 .triangle {display: none;}
 
 footer.footer_main {padding-bottom: 30px;}
@@ -202,7 +202,7 @@ footer.footer_main>div {width: 128px;}
 footer.footer_main p {padding-top: 8px; font-size: 10px;}
 footer.footer_main p:first-of-type {padding: 20px 30px; font-size: 13px;}	
 .about_text article {width: 100%;}
-.about_text article p {/*padding: 8px 30px 0;*/padding: 0 7.8125% 0 4.6875%; font: 16px/1.5 "Gotham Light";}
+.about_text article p {padding: 0 7.8125% 0 4.6875%; font: 16px/1.5 "Gotham Light";}
 .about_text article p:first-child {padding-top: 36px;}
 .about_text article p:last-child {padding-bottom: 36px;}
 
@@ -215,7 +215,7 @@ footer.footer_main p:first-of-type {padding: 20px 30px; font-size: 13px;}
 .inner ul li a span span {display: inline-block; position: relative; text-align: center;}
 
 .dms_main h1 {padding-left: 4.6875%; text-align: left;}
-.dms_main p {/*margin: 16px 0;*/ font: 16px/1.5 "Gotham Light";}
+.dms_main p {font: 16px/1.5 "Gotham Light";}
 .dms_main header, .dms_main header>p {font: 18px/1.5 "Gotham ExtraLight";}
 .dms_main ol {font: 16px/1.5 "Gotham Light";}
 .dms_content1 h1, .dms_content2 h1, .dms_content3 h1, .dms_content4 h1, .ss_content1 h1, .ss_content2 h1 {font: 22px "Gotham Book";}
