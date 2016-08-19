@@ -197,7 +197,7 @@ nav.nav_main>ul>li {display: list-item; float: none; width: 100%; margin: 0 5px 
 nav.nav_main>ul>li>a, nav.nav_main>ul>li span {display: block; position: relative; height: 44px; padding: 0 70px 0 20px; border:0; color: #FFF; line-height: 44px; background-color: #F36F21; z-index: 100; -webkit-transition: background-color ease .5s; transition: background-color ease .5s;}
 nav.nav_main>ul>li>a:hover, nav.nav_main>ul>li span:hover {color: #FFF; background-color: #FA9623;}
 nav.nav_main>ul>li>ul {position: relative; width:100%; margin-left: 0; padding: 0;}
-nav.nav_main>ul>li>ul>li {margin: 1px 0 0;}
+nav.nav_main>ul>li>ul>li {position: relative; margin: 1px 0 0;}
 nav.nav_main>ul>li>ul>li>a {padding: 0 48px;}
 .triangle {display: none;}
 
