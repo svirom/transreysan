@@ -15,7 +15,7 @@ header.header_main>div {width: 300px; left: 4.6875%; top: 22px; position: absolu
 .nav-opener.nav-active:after {-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-o-transform:rotate(-45deg); transform:rotate(-45deg);}
 .nav-opener.nav-active span { opacity:0;}
 
-nav.nav_main {float: right; margin: 32px 6.796875% 0 0; font: 16px 'Gotham-Book', Arial, sans-serif;}
+nav.nav_main {float: right; margin: 32px 6.796875% 0 0; font: 16px "Gotham-Book", Arial, sans-serif;/*font: 16px 'gotham_bookregular', Arial, sans-serif;*/}
 nav.nav_main>ul>li {display: inline-block; float: left; margin: 0 25px; padding: 5px 10px;}
 nav.nav_main>ul>li>a, nav.nav_main>ul>li>span {display: block; color: #3F4447; text-decoration: none; border: 10px solid white; cursor: pointer; transition: color ease .5s;}
 nav.nav_main>ul>li>a:hover, nav.nav_main>ul>li>span:hover {color: #F36F21;}
