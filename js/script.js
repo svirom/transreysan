@@ -1,5 +1,12 @@
 $(document).ready(function() {
 
+//Preloader
+var hidePreloader = function() {
+    $("#loader").fadeOut();
+    $("#loader-wrapper").delay(200).fadeOut("slow");
+};
+    hidePreloader();
+
 //change color of triangle in submenu on hover
 $('.nav_main ul li>ul>li>a:first').hover(function(){
 	$('.triangle').css('border-bottom-color', '#FA9623');

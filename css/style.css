@@ -3,6 +3,18 @@ body {width: 100%; background-color: #FFF; min-width: 320px; max-width: 1920px;}
 h1, h2, h3, h4, h5, h6 { font-weight:normal;}
 ol, ul {list-style: none;}
 img {width: 100%; border: none; outline: none;}
+/*---------------------Preloader----------------------------------*/
+#loader-wrapper { position: fixed; top: 0;left: 0; width: 100%; height: 100%; z-index: 9999; overflow: hidden; background-color: #485b72;}
+.no-js #loader-wrapper { display: none;}
+#loader { display: block; position: relative; left: 50%; top: 50%; width: 120px; height: 120px; margin: -75px 0 0 -75px; border-radius: 50%; border: 3px solid transparent; border-top-color: #3077e8; -webkit-animation: spin 1.7s linear infinite; animation: spin 1.7s linear infinite; z-index: 11;}
+#loader:before { content: " "; position: absolute; top: 5px; left: 5px; right: 5px; bottom: 5px; border-radius: 50%; border: 3px solid transparent; border-top-color: #e65c00; -webkit-animation: spin-reverse .6s linear infinite; animation: spin-reverse .6s linear infinite;}
+#loader:after { content: " "; position: absolute; top: 15px; left: 15px; right: 15px; bottom: 15px; border-radius: 50%; border: 3px solid transparent; border-top-color: #fff; -webkit-animation: spin 1s linear infinite; animation: spin 1s linear infinite;}
+@-webkit-keyframes spin { 0% { -webkit-transform: rotate(0deg);} 100% { -webkit-transform: rotate(360deg);}}
+@keyframes spin { 0% { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg);} 100% { -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg);}}
+@-webkit-keyframes spin-reverse { 0% { -webkit-transform: rotate(0deg);} 100% { -webkit-transform: rotate(-360deg);}}
+@keyframes spin-reverse { 0% { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg);} 100% { -webkit-transform: rotate(-360deg); -ms-transform: rotate(-360deg); transform: rotate(-360deg);}}
+/*-------------------End Preloader--------------------------------*/
+
 header.header_main {margin: 0 auto; width: 100%; height: 132px; background: url(../img/header_main_b.png) 0 110px repeat-x; position: relative;}
 header.header_main>div {width: 300px; left: 4.6875%; top: 22px; position: absolute;}
 
@@ -161,7 +173,8 @@ ol li:nth-child(8) span {padding-left: 5px;}
 .keep_in_touch div.inner_contacts div.form_wrapper form input:focus::-moz-placeholder, .keep_in_touch div.form_wrapper form textarea:focus::-moz-placeholder {opacity: 0;}
 .keep_in_touch div.inner_contacts div.form_wrapper form input:focus:-moz-placeholder, .keep_in_touch div.form_wrapper form textarea:focus:-moz-placeholder {opacity: 0;}
 .keep_in_touch div.inner_contacts div.form_wrapper form input:focus:-ms-input-placeholder, .keep_in_touch div.form_wrapper form textarea:focus:-ms-input-placeholder {opacity: 0;}
-#map_canvas {padding: 15.625% 50%;}
+/*#map_canvas {padding: 15.625% 50%;}*/
+#map_canvas {height: 50%;}
 
 
 
